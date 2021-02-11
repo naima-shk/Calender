@@ -8,7 +8,6 @@ function getNumberofDays(year,month){
 }
 
 
-
 function renderCal(getNumDays){
     let yearPTag=document.getElementById("year");
     yearPTag.innerText= yearChosen;
@@ -24,6 +23,9 @@ function renderCal(getNumDays){
        let date = months + " " + i.toString() + ", " + yearChosen;
        //console.log(date);
        let dayOfWeek= new Date(date).getDay();
+       dayPTag.addEventListener("click", function(){
+        alert("Welcome,  " + date);
+      });
        document.getElementById(dayOfWeek.toString()).appendChild(dayPTag);
     } 
 
