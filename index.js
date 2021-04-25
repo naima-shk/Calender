@@ -21,7 +21,7 @@ function renderCal(getNumDays){
        dayPTag.appendChild(dayText);
        //trying  to get March 30,2021
        let date = months + " " + i.toString() + ", " + yearChosen;
-       //console.log(date);
+       console.log(date);
        let dayOfWeek= new Date(date).getDay();
        dayPTag.addEventListener("click", function(){
         alert("Welcome,  " + date);
